@@ -1,14 +1,22 @@
-# v2rworkers
+# V2Ray Worker
+ Total solution for v2ray configs over Cloudflare's worker
 
-V2Ray Worker
-Total solution for v2ray configs over Cloudflare's worker
+[Read Me](https://github.com/thelobby-mm/v2rworkers/edit/main/README.md)
 
-نسخه فارسی
+## How to use
 
-How to use
 To be completed...
 
-Deploy
-Fork this Repo and enable Github Action
-Open CloudFlare and create KV namespace with name settings then copy the ID
-Go to this forked repo and set secrets with name KV_NAME and fill with KV settings ID
+## Deploy 
+ 1. Fork this Repo and enable Github Action
+ 2. Open CloudFlare and create KV namespace with name `settings` then copy the ID
+ 3. Go to this forked repo and set secrets with name `KV_NAME` and fill with KV settings ID
+ 4. Edit this `README.md` file, then find and replace this button url bellow with yours `https://github.com/USER/REPO_NAME` then save it.
+ 4. then press `Deploy With Workers` and follow the instruction
+
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/thelobby-mm/v2rworkers)
+
+### Credits
+Built-in vless config generator is based on [Zizifn Edge Tunnel](https://github.com/zizifn/edgetunnel), re-written using Typescript.
+Built-in trojan config generator is based on [ca110us/epeius](https://github.com/ca110us/epeius/tree/main), re-written using Typescript.
+Proxy IPs source: https://rentry.co/CF-proxyIP
